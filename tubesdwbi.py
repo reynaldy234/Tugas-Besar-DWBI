@@ -21,9 +21,9 @@ st.markdown("""
 
 # --- DATABASE CONFIG (ISI DISINI) ---
 DB_USER = 'avnadmin'
-DB_PASS = 'MASUKKAN_PASSWORD_KAMU_DISINI' 
-DB_HOST = 'mysql-service-account.aivencloud.com'
-DB_PORT = '10628'
+DB_PASS = 'AVNS_cSm0J8OS8JmvpcWZuyO' 
+DB_HOST = 'mysql-2be70b1f-tugasbesardwbi-kelompok4.h.aivencloud.com'
+DB_PORT = '14400'
 DB_NAME = 'amazon_dw'
 
 @st.cache_data
@@ -163,4 +163,5 @@ if not df.empty:
         st.plotly_chart(fig_bar, use_container_width=True)
 
 else:
+
     st.warning("⚠️ Data belum masuk. Cek koneksi database.")
